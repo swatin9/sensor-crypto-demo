@@ -35,8 +35,8 @@ int main() {
     const char *original_message = "Sensor123: Temperature=25.5";
     size_t message_len = strlen(original_message);
 
-    unsigned char ciphertext[256];        // Adjust size as needed
-    unsigned char decrypted_message[256]; // Adjust size as needed
+    unsigned char ciphertext[256];        
+    unsigned char decrypted_message[256]; 
 
     encryptMessage((const unsigned char *)original_message, message_len, key, ciphertext);
     decryptMessage(ciphertext, message_len, key, decrypted_message);
